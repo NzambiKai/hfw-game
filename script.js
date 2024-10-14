@@ -1,9 +1,8 @@
 // Array of 35 random words
 const words = [
-  "Apple", "Boy", "Cat", "Dog", "Elephant", "Fish", "Goat", "Hat", "Ink", "Jelly",
-  "Kite", "Lion", "Mouse", "Nose", "Ocean", "Pine", "Queen", "Rat", "Sun", "Tiger",
-  "Umbrella", "Violin", "Water", "X-ray", "Yacht", "Zebra", "Cloud", "Dance", 
-  "Flute", "Game", "Honey", "Ivory", "Jacket", "Kangaroo", "Lemon"
+  `must`, `computer`, `brother`, `mustn't`, `light`, `didn't`,  `about`, `can't`, `won't`, `cousin`, `allowed`, `remove`,
+  `fetch`, `world`, `while`, `week`, `strange`, `beautiful`, `leave`, `station`, `someone`, `won`, `straight`, `watch`, `wanted`,
+  `early`, `voice`, `across`, `finally`, `sudden`, `hour`, `second`, `minute`, `clothes`, `different`
 ];
 
 let currentIndex = 0;
