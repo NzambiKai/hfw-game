@@ -9,17 +9,20 @@ const words = [
 let currentIndex = 0;
 
 const wordDisplay = document.getElementById('word-display');
+const progressDisplay = document.getElementById('progress-display');
 const startButton = document.getElementById('start-button');
 
 startButton.addEventListener('click', () => {
   if (currentIndex < words.length) {
     wordDisplay.innerText = words[currentIndex];
+    progressDisplay.innerText = `Word ${currentIndex + 1} of ${words.length}`;
     startButton.innerText = 'Next';
     currentIndex++;
   } 
   if (currentIndex === words.length) {
     wordDisplay.style.color = 'green';
     wordDisplay.innerText = 'Complete!';
+    progressDisplay.innerText = '';
     startButton.innerText = 'Start Again';
     currentIndex = 0;
   }
