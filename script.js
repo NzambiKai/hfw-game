@@ -3,7 +3,7 @@ const words = [
   "Apple", "Boy", "Cat", "Dog", "Elephant", "Fish", "Goat", "Hat", "Ink", "Jelly",
   "Kite", "Lion", "Mouse", "Nose", "Ocean", "Pine", "Queen", "Rat", "Sun", "Tiger",
   "Umbrella", "Violin", "Water", "X-ray", "Yacht", "Zebra", "Cloud", "Dance", 
-  "Flute", "Game", "Honey", "Ivory", "Jacket", "Kangaroo", "Lemon", "Mirror"
+  "Flute", "Game", "Honey", "Ivory", "Jacket", "Kangaroo", "Lemon"
 ];
 
 let currentIndex = 0;
