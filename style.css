@@ -37,6 +37,7 @@ body {
 
 /* Button styles */
 #start-button {
+  font-size: 1.5rem;
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
