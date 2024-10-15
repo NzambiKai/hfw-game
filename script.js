@@ -58,7 +58,7 @@ const startButton = document.getElementById('start-button');
 wordDisplay.innerText = wordData[wordData.length - 1].word
 
 startButton.addEventListener('click', () => {
-  if (currentIndex < (wordData.length+1)) {
+  if (currentIndex < wordData.length+1) {
     wordDisplay.innerText = wordData[currentIndex].word;
     sentenceDisplay.innerText = wordData[currentIndex].sentence;
     progressDisplay.innerText = `Word ${currentIndex + 1} of ${wordData.length}`;
@@ -68,7 +68,7 @@ startButton.addEventListener('click', () => {
   if (startButton.innerText === 'Start Again') {
     startButton.innerText = 'Start';
   }
-  if (currentIndex === wordData.length) {
+  if (currentIndex === wordData.length+1) {
     wordDisplay.innerText = 'Finished!';
     sentenceDisplay.innerText = '';
     progressDisplay.innerText = '';
