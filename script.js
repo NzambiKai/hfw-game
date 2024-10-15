@@ -72,5 +72,6 @@ startButton.addEventListener('click', () => {
     progressDisplay.innerText = '';
     startButton.innerText = 'Start Again';
     currentIndex = 0;
+    wordData = shuffleArray(wordData);
   }
 });
