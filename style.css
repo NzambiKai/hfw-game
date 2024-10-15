@@ -1,8 +1,13 @@
 /* Global Styles */
 * {
+  -webkit-text-size-adjust: none;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  touch-action: manipulation;
 }
 
 body {
@@ -11,6 +16,7 @@ body {
   background-color: #0f1216;
   font-size: 1rem;
   color: #edf5fb;
+  -webkit-touch-callout: none;
 }
 
 /* Centering container */
