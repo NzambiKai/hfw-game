@@ -51,16 +51,15 @@ startButton.addEventListener('click', () => {
     progressDisplay.innerText = `Word ${currentIndex + 1} of ${wordData.length}`;
     startButton.innerText = 'Next';
     currentIndex++;
-  } 
+  }
+  if (startButton.innerText === 'Start Again') {
+    startButton.innerText = 'Start';
+  }
   if (currentIndex === wordData.length) {
     wordDisplay.innerText = 'Finished!';
     sentenceDisplay.innerText = '';
     progressDisplay.innerText = '';
     startButton.innerText = 'Start Again';
     currentIndex = 0;
-  }
-  if (startButton.innerText === 'Start Again') {
-    wordDisplay.style.color = 'black';
-    startButton.innerText = 'Start';
   }
 });
