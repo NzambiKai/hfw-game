@@ -35,6 +35,11 @@ body {
   margin-bottom: 20px;
 }
 
+#progress-display {
+  color: #767e86;
+  margin-bottom: 20px;
+}
+
 /* Button styles */
 #start-button {
   font-size: 1.25rem;
