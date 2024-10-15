@@ -49,6 +49,7 @@ function shuffleArray(array) {
 wordData = shuffleArray(wordData);
 
 let currentIndex = 0;
+
 const wordDisplay = document.getElementById('word-display');
 const sentenceDisplay = document.getElementById('sentence-display');
 const progressDisplay = document.getElementById('progress-display');
