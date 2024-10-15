@@ -8,6 +8,8 @@
 body {
   height: 100vh;
   font-family: Arial, sans-serif;
+  background-color: #0f1216;
+  font-size: 1rem;
 }
 
 /* Centering container */
@@ -23,13 +25,11 @@ body {
 .centered-div {
   text-align: center;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Word display styles */
 #word-display {
-  font-size: 24px;
+  font-size: 5rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
