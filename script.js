@@ -37,6 +37,17 @@ const wordData = [
   { word: "different", sentence: "Everyone has different opinions." },
 ];
 
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+// Shuffle the wordData array
+wordData = shuffleArray(wordData);
+
 let currentIndex = 0;
 
 const wordDisplay = document.getElementById('word-display');
