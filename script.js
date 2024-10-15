@@ -1,5 +1,5 @@
 // Array of words and sentences
-const wordData = [
+let wordData = [
   { word: "must", sentence: "You must study hard to pass the exam." },
   { word: "computer", sentence: "She spent hours working on her computer." },
   { word: "brother", sentence: "My younger brother loves playing soccer." },
