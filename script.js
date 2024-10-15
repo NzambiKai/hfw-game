@@ -53,8 +53,7 @@ startButton.addEventListener('click', () => {
     currentIndex++;
   } 
   if (currentIndex === wordData.length) {
-    wordDisplay.style.color = 'green';
-    wordDisplay.innerText = 'Complete!';
+    wordDisplay.innerText = 'Finished!';
     sentenceDisplay.innerText = '';
     progressDisplay.innerText = '';
     startButton.innerText = 'Start Again';
