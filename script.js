@@ -55,6 +55,8 @@ const sentenceDisplay = document.getElementById('sentence-display');
 const progressDisplay = document.getElementById('progress-display');
 const startButton = document.getElementById('start-button');
 
+wordDisplay.innerText = wordData[wordData.length - 1];
+
 startButton.addEventListener('click', () => {
   if (currentIndex < wordData.length) {
     wordDisplay.innerText = wordData[currentIndex].word;
