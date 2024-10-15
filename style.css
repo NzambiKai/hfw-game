@@ -35,6 +35,10 @@ body {
   margin-bottom: 20px;
 }
 
+#sentence-display {
+  margin-bottom: 20px;
+}
+
 #progress-display {
   color: #767e86;
   margin-bottom: 20px;
