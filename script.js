@@ -44,33 +44,52 @@ function shuffleArray(array) {
   }
   return array;
 }
-
-// Shuffle the wordData array
-wordData = shuffleArray(wordData);
-
-let currentIndex = 0;
+let currentIndex = -1;
 
 const wordDisplay = document.getElementById('word-display');
 const sentenceDisplay = document.getElementById('sentence-display');
 const progressDisplay = document.getElementById('progress-display');
 const startButton = document.getElementById('start-button');
+const backButton = document.getElementById('back-button');
+
+wordData = shuffleArray(wordData);
+backButton.hidden = true;
+
+function updateDisplay(index) {
+    wordDisplay.innerText = wordData[index].word;
+    sentenceDisplay.innerText = wordData[index].sentence;
+    progressDisplay.innerText = `Word ${index + 1} of ${wordData.length}`;
+    startButton.innerText = 'Next';
+}
+function backButtonStatusChecker() {
+  if (currentIndex > 0) {
+    backButton.hidden = false;
+  } else {
+    backButton.hidden = true;
+  }
+}
 
 startButton.addEventListener('click', () => {
+  currentIndex++;
   if (startButton.innerText === 'Start Again') {
-    startButton.innerText = 'Start';
-  }
-  if (currentIndex < wordData.length) {
-    wordDisplay.innerText = wordData[currentIndex].word;
-    sentenceDisplay.innerText = wordData[currentIndex].sentence;
-    progressDisplay.innerText = `Word ${currentIndex + 1} of ${wordData.length}`;
-    startButton.innerText = 'Next';
-    currentIndex++;
-  } else {
+    currentIndex = 0;
+    wordData = shuffleArray(wordData);
+    updateDisplay(currentIndex);
+  } else if (currentIndex === wordData.length) {
     wordDisplay.innerText = 'Finished!';
     sentenceDisplay.innerText = '';
     progressDisplay.innerText = '';
     startButton.innerText = 'Start Again';
-    currentIndex = 0;
-    wordData = shuffleArray(wordData);
+  } else {
+    updateDisplay(currentIndex);
   }
+  backButtonStatusChecker()
+});
+
+backButton.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateDisplay(currentIndex);
+  }
+  backButtonStatusChecker()
 });
